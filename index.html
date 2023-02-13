@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+      integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="p-2 border-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 text-lg-start text-center">
+            <span class="me-3"
+              ><i class="bi bi-mailbox me-2"></i>info@reen.com</span
+            >
+            <span><i class="bi bi-phone me-2"></i>+00 (123) 456 78 90</span>
+          </div>
+          <div class="col-sm-6 header-icon text-lg-end text-center">
+            <a class="me-3"><i class="bi bi-facebook"></i></a>
+            <a class="me-3"><i class="bi bi-google"></i></a>
+            <a class="me-3"><i class="bi bi-twitter"></i></a>
+            <a class="me-3"><i class="bi bi-pinterest"></i></a>
+            <a class="me-3"><i class="bi bi-behance"></i></a>
+            <a><i class="bi bi-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- nav -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 logo">
+            <img src="./imgs/reen.png" class="w-75" alt="" />
+          </div>
+          <div class="col-sm-9">
+            <nav class="main-menu">
+              <ul class="menu">
+                <li class="me-3"><a href="">Home</a></li>
+                <li class="me-3"><a href="">Portfolio</a></li>
+                <li class="me-3"><a href="">Blog</a></li>
+                <li class="me-3"><a href="">Pages</a></li>
+                <li class="me-3"><a href="">Features</a></li>
+                <li class="me-3"><a href="">Mega Menu</a></li>
+                <li class="me-3"><a href="">Contact</a></li>
+                <li>
+                  <a href=""><i class="bi bi-search"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="container text-center">
+        <div class="row">
+          <div class="feature-area">
+            <h1 class="mx-auto">Made For Designers</h1>
+            <p class="mx-auto">
+              Create your online portfolio in minutes with the professionally
+              and lovingly designed REEN website template. Customize your site
+              with versatile and easy to use features.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <button class="mx-auto rounded">Get Started Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="container text-center">
+        <div class="service-head">
+          <div class="row">
+            <h2 class="mx-auto">Beautiful.Clean.Responsive.</h2>
+            <p class="mx-auto">
+              REEN is a high-quality solution for those who want a beautiful
+              website in no time.It's fully responsive and will adapt itself to
+              any mobile device. iPad, iPhone, Android, it doesn't matter. Your
+              content will always looks its absolute best.
+            </p>
+          </div>
+        </div>
+        <div class="service-content">
+          <div class="row">
+            <div class="col-sm-4 service-col">
+              <div class="service-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="61"
+                  height="53"
+                  viewBox="0 0 61 53"
+                >
+                  <image
+                    id="icon-heart-empty-1"
+                    width="61"
+                    height="53"
+                    xlink:href="data:img/png;base64,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"
+                  />
+                </svg>
+              </div>
+
+              <div class="service-text">
+                <h4>Passion</h4>
+                <p>
+                  Magnis modipsae que lib voloratati andigen daepeditem quiate
+                  re porem aut labor. Laceaque quiae sitiorem rest non
+                  restibusaes maio es dem tumquam core posae volor remped modis
+                  volor.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 service-col">
+              <div class="service-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="46"
+                  height="65"
+                  viewBox="0 0 46 65"
+                >
+                  <image
+                    id="icon-lamp"
+                    width="46"
+                    height="65"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAABBCAYAAACuG5a4AAAE8UlEQVRoge2ae4xfQxTHP7tar3qUWFQ9QpogQbUU8UcJomSptolGoolnVPiLxCviVdJ2JaIiXlUsQkRFEFTpEkGUrvejKpZW612kZZPWsitnc25ze/fOmblzf/f+IvpJ9p+dMzPf370zZ845c1tYsoBItgWOBcYDY4H9gb2AXYGdU0MOAOuBX4DvgW+AD4H3gaXAXzHTFxUuYqcBM4Djge1if7XSC3QBjwLPFfkRrYF2OwDX6BN7DDi1AaKFEcBkYCGwBrg8dNwQ4e3AF8BsYJfyWp20AbcBK4ATfcaW8K10oOeB0RUKzrIPsASYM7iUHbiEbw08qa+uWVwNPKIPcAjDcv4nhg/rJizK38Ba9SD92lfm2E2XQuieShAn0AdcoN5pE3nCZwFnBQ68GngGeAP4QF3dPw7b4cABwDhgInCGuk8f5wFfAnPTdll32K5r2oe4sA5diwMB9nnI+p2kS+I4j628vROA15N/pF+dHBrzPQP8CpwJnAS8UkI02vclPQ+mA78ZtqJzgZ4jQ4Rf73l1PcBRwFMlxLpYqGP3GDZjgMuywkcBlxidftan/HUFohN6dI4fDZurgJ1ICZ+Zfg05yAZZWaHohJU6lwtZzuckwmWTnG8Yy2Z9sQbRCbLunzXaL0SFj9PTykVHXYpTzDHaDhO3KsJPNoy+At6sTJ6bdzQ+cjEpeeIuFjVBdMILRtvRIvwgw2BpNZqCsOY+tFVdoYvPmyjcmntwjbcZBnW4QBc/GG0jfdHahur1OTHDiVYNRV3s3TTZmyfcWTaI8O8MgzHVajMZazT+1KoxtIspTRR+pNH2qQh/yzCYpglA3UiCc7Yx5zIR/pph0OYZoCpmarbkYrFkQJJjfmvE4lLvOBj4sybRu2uJYqSjfVXixyVHfMgYSDzLnRWJzONWQzSqtT/x43d5fPa5ml5VzelJvO2gV7VuSiTklLrPI2q+J/wtyx7AA54x5mn5Y7Occ5Ymwy7kQOi0qkslaNGxrfBjTTpOTwuXLPsKz9xSIriyAuGSBJ/isblIl8og2VilM6CucgswIV7jEI7wZDzC3dncICt8QJPV1cYgw7SevX0DREv5+gmtVbrozqth5kWHsvhP01sEFweq2yrL7Z546HctQG0MES58rMd9nzHopVpCi6U9ydgdDOipnZsTWPF4l24Ii/v1VqEoOwL3evrcbOW8vkSiM3H4DsSv3xQh/EZPrL/YN27I5dU2wNtGNUCW0yFaCg5B9sdnroK9xNo63lprrJBC+0Y98l2Z0vBs7dpDhyFauNgnOlQ4ulktLzLVU59JmKAFfReP60WBlyJXG7M9mfd1AWNca7StS5eRfRQR3usRN8UT/EvbZKP9Bi1nN1w4eqm1ytHW4nGfcgHlCtDk4veeIkKKCpcNeofRPsOIHq0UcF7RO/2iwoUHDQ8zWj9KyCKl4f0cffo8GVguMcLX6anqoluP6/TfR4Z9V4j7yxIjnAaXn1+O6RQrvDuyXx7LYjrFCv8ksl8eUaXsWOHrPSFvKP2ei1kneXf5oSzyVFRDiC4ylRFuxRyVE7tUms5/VnjsUtlXayyN4FUtutYifHzMMe1gaozwLWu8brYIr5v/nfDl+kVyWZbrfU9twleoS5we+T2LhLKS5knhR8QXpsz342kkLRN/fAxwOLBnKgD7Q6uu7wHvAk8XqHrlA/wLgZfrE1PCuvMAAAAASUVORK5CYII="
+                  />
+                </svg>
+              </div>
+
+              <div class="service-text">
+                <h4>Creativity</h4>
+                <p>
+                  Magnis modipsae que lib voloratati andigen daepeditem quiate
+                  re porem aut labor. Laceaque quiae sitiorem rest non
+                  restibusaes maio es dem tumquam core posae volor remped modis
+                  volor.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 service-col">
+              <div class="service-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="56"
+                  height="53"
+                  viewBox="0 0 56 53"
+                >
+                  <image
+                    id="icon-star-empty-1"
+                    width="56"
+                    height="53"
+                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA1CAYAAAAUGCjAAAAE0ElEQVRogcWaf6hfYxzHX5uRLd1LLpu2sXbvNuH6GTeUuMmv/CM//lA0FCKSf7ZCriI//hEtJJKShELU0PJzGdKmjfm1jSulNcotlpmLPvU+63Q8n+c8z/d7zrnveup8n+d7Pp/nfd7n+ZzP8zlnFuueoiOcBLwJ7AHOB77qwu3srtgBjwOHA4uBp7ty2hXBC4Cx0u/T1dc6uiI4kdjXOLogWFWvwFgXKnZBMKZU6yq2TdBTr0DrKrZNMEWhVlVsk2CdegVaVbFNgjnKtKZiWwQ99d4HPg/0t6ZiWwQ9RR4A7sk8py+0QdBT7xPloq91qWIbBD0liv5/u1SxaYJ16hXoTMWmCdapV6AzFec0cP5RwNHaIaSoV6BQ8cRKv9m4F9gAfA1MAn/3M8E67AccCYwAy4Flana8JMGGp0ih4iuBsTtKx0buB+Bb4Ds1O94G/AhMx5wXO/pZwCKRWCECI2p2vH/ChQjhM+DUqH/YGFAxFXtFeJuaHX+j45/sItrVv1a3xBE9OonhvprxmIopsAt/jFoVPwN3moJ7G1iLIdj6OlkkYuhXxRim5ygAXNyAMbtQO0q3zPMJ5NB/rgeuLC2JpX0sizI+MAWHgHXACQkn/FW637erJS/4DFQD27BaERcOSDBl8xovgswg8DZwmvPn34ELgY+Afxoi0Svs2X0GsBY4yLHxhZEDdhUP+ingPOBD5wQz9IJunZnGUs3FI/cpcI6Ro5LJTClNetchsBB4T7fITGFEc1jo+N8goX4pOqqp2m4FnNcjJM3I6AwQHJVvj5wJc66E2odQLmokL4uQtKD0TsckR+VzyBl/Q8Lsrg54ybZFy0sU6kMwR+sTay79Yky+PHKWJFwaIhcjiEL+1cCzzviAIm+bJMfkY8AZNwEulyBB1G2XjOQ1wBPO+IBunfHeObgYl22P3JMSIPrsTdkPWqZxE/CwMz5Pa6BJkuOyOc8ZXwPcmJJYpG54jeTtwIPO+NyGN6oTshmCzeGWxDQwe0e/urJXK2Nrpq0YPFt3aQ7J6KVkscbp/7IvSmm2Hs011AvBY53+LT3Y8uDZ8ny76IXgcU5/Fwp6vl00peDOIrltCLtkM8V34wSPD/SlBpgFkYwkxWbIdxS9EAzVPzbXnDOk9xLfq9lj4OCac0I2Q76jyCV4GDA/0O+tmUGRsZ3/KuBA7ePuVilwdWRfF7I5X3NIRi7B1Ag6V5PfLjKhdMvI3y9Fbws82BuJpLkEvS1SsV6sVnKrik82+UMTbA4pDdyh9Kuot3jrOmub1oSCk9qqXKfi0yMKJrlYoK+hzMZK2ZxMnIOL3Hpo6Dk0W+8QhhPO/1U+ByP/sU+9nrGirWqmKXNwkatgyPjiBHJTqmAvUbOE+Y+ac4ZVOkyZg4scgotqrnwIfwIPqVg0ofLjbwpAw7qd92TaHNRckpBDMOfKWZX7MZX4VpWrXCXsVPRcrs1rTtE4eS45BFMW97RKHFZ+v1kvQOpgFfEb9I7xucR9XnKgySFYF55f0n9WOtGvDhY9r5I6r/Y5l33IIeilSWv1FumKhr7i3aqK3inAW5lz+R9yCB5S+W0f9ZwJXARsyrCTio2qtJ8lX7G5uMgh+KLW2Mf65vpsvYxpG/a+xHwZWats28ufl5OcAv8BmzP+WJhWb7UAAAAASUVORK5CYII="
+                  />
+                </svg>
+              </div>
+
+              <div class="service-text">
+                <h4>Quality</h4>
+                <p>
+                  Magnis modipsae que lib voloratati andigen daepeditem quiate
+                  re porem aut labor. Laceaque quiae sitiorem rest non
+                  restibusaes maio es dem tumquam core posae volor remped modis
+                  volor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+      <div class="container">
+        <div class="section-head row">
+          <h2>Check out our latest works</h2>
+          <p>
+            Magnis modipsae que voloratati andigen daepeditem quiate re porem
+            aut labor.
+          </p>
+        </div>
+        <div class="latest-posts row">
+          <div class="col-sm-6">
+            <div class="post-inner-col">
+              <img src="./imgs/post_1.jpg" alt="" class="img-fluid" />
+              <div class="content">
+                <h4>Grand Motel gets an identity brushup</h4>
+                <p>Identity</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="post-inner-col">
+              <img src="./imgs/brand.jpg" alt="" class="img-fluid" />
+              <div class="content">
+                <h4>Grand Motel gets an identity brushup</h4>
+                <p>Identity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousal-row row">
+          <div class="col-sm-3">
+            <img src="./imgs/simpli.jpg" alt="" />
+          </div>
+          <div class="col-sm-3">
+            <img src="./imgs/record.jpg" alt="" />
+          </div>
+          <div class="col-sm-3">
+            <img src="./imgs/astor.jpg" alt="" />
+          </div>
+          <div class="col-sm-3">
+            <img src="./imgs/signwall.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us -->
+    <section class="contact-us">
+      <div class="container text-center">
+        <div class="row contact-us-head">
+          <h2 class="mx-auto">Want to work with us?</h2>
+          <p class="mx-auto">
+            Magnis modipsae que voloratati andigen daepeditem quiate re porem
+            aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem
+            tumquam.
+          </p>
+        </div>
+        <div class="row contact-us-btn">
+          <button class="rounded mx-auto">Get In Touch</button>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="upper-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="who-we-are">
+                <h4>Who We Are</h4>
+                <div class="reen-logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="129"
+                    height="32"
+                    viewBox="0 0 129 32"
+                  >
+                    <image
+                      id="logo"
+                      width="129"
+                      height="32"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAAAgCAYAAAA14BsbAAADpElEQVR4nO2bW4hOURTHfzO55jLmiVxCEvFgPIgHD+OBhBch8iTJ5UEZZSKXcZcSo9wlhUhKRIkHpElEjYgniXjRlOtoKNra2pOZs75zvv3ts88Zffavzst/nbP3uaxvr7XX3h/KD1+VUs1KqaNKqRlKqUqlFBbHEk/9xzEgcg+1Mef5oibSX41Fu7eUUhWW76v9eCJa6czWAtfEHpX4oS9QA6wEbgLPgdme2i53pgP1XfmMvpwgyljgOrA/wz7KiZ3AlK56nqw/UB1wSKiBKN2AC0CVsORAHr/SVcBCoQaijABOCjUH8hqqdVjoKdRAlAXAcqFmTF5OMNg8YKA4B4Hxeb4nHYumCdWefsBMYBnQo8hV84BzQk3mGzAn8YxkWhOthUnzPl4KpXR6AReBSUCbh/aKop3gbso2rgFngDtAb2H9i0v2+9PD/ZVK3v0VQo8EjcCKAjbv+AoHD4HjQu3MoCJOEujM8rxCqM+c4IlQJCE5LA09WxiZdSc+nWCoUCS5xLgyQtcNzgPds3ykbkJxo8oifn0Bfgg1mf7A68Qz4nkALIq1xuPa3wtgllDTo3OpHcD6DNr+Q1on6Gtq33uAYcLamUdCKU4FMNzx3lw/pmt/n4RiR6t5j0notYXbwK2Ec5zRTqCyaLgAN6QUAFYDp4qE5gozA5sAvBfWlCR17BOdC5wOX7wgekq6u5AhwkDgrHEIr+TlBA3AB6EG2tkG3Ld4Gzr0rhNqSvJwAh0GDgg10BFdFFtsmVfsSpG3FCRrJ7gKzDcPGUjmjeXikc7jBgg1Bb6miFFagC2mipgm8fwObBCqHe8cr6sTih0tjtd15BJwIu+VxCyc4DMwCvgqLKXzw9TQ8yTv/qKsAaYC44QlI2zCwWZgboej2MaHqq5YEy8j2kyRq9TCmjM2TtAEXOlw1JtfexIbgeoEeyCZZ8DaxDNydoIonyyGTO0Am4QaKIUjJrHOHNecoNHErqSNkboSdhh4JSz26PurTXF9k8PMJE1/jx03ssSxFHgKDImx26KX8MfEnevqBO2jQYOw/KW7qYS5LOK008dsVnGl2qGmn6a/iZZL6rZ8MPWDOymn89oBmoVqSNNwo0VuoHcZTxZqoBTumf8lZEYaJ7DJDTT7hBIole0mtGVC2oqhzWgw1UwvA+78MmHh47/oBLajwd6sd8f8B7w1u7q942PtwGY0GJ3Xztky5zJwzPcj+nAC29GgociUMmCHLiLpf337AfgNBXRXpM/aDKMAAAAASUVORK5CYII="
+                    />
+                  </svg>
+                </div>
+                <p>
+                  Magnis modipsae voloratati andigen daepeditem quiate re porem
+                  que aut labor. Laceaque eictemperum quiae sitiorem rest non
+                  restibusaes maio es dem tumquam.
+                </p>
+                <div class="more">
+                  <a href="" class=""
+                    >More about us <i class="bi bi-arrow-right icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="latest-work">
+                <h4>Latest Works</h4>
+                <div class="row g-2">
+                  <div class="col-sm-6">
+                    <img src="./imgs/grand-motel-s.jpg" />
+                  </div>
+                  <div class="col-sm-6">
+                    <img src="./imgs/screen.jpg" />
+                  </div>
+                  <div class="col-sm-6">
+                    <img src="./imgs/record-s.jpg" />
+                  </div>
+                  <div class="col-sm-6">
+                    <img src="./imgs/mobile-s.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="get-touch">
+                <h4>Get In Touch</h4>
+                <p>
+                  Doloreiur quia commolu ptatemp dolupta oreprerum tibusam
+                  eumenis et consent accullignis dentibea autem inisita.
+                </p>
+                <div class="contact-links">
+                  <span
+                    ><i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="7"
+                        height="12"
+                        viewBox="0 0 7 12"
+                      >
+                        <image
+                          id="icon-location"
+                          width="7"
+                          height="12"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAtElEQVQYlV3Qv0rCURyG8Y/hZQhGg5AIDkFDF9AVtLl3E4ZNNjc0BC2BCaJDOOmWa0tBqwV5GRb94YXzg+iFw/me9+EcHk5tNH+AHoZoYoM+xnWc4A7fWGOvnLc7OMcHjtDCYUD6wA5WeMz7eMIyfeAnGqgVmH03feAL2rjGMW7QxXOEFjjAaVlV7nPzFj9/yiTmk8A3TP/BGd4Dk7MilnzhIkMFX3FZ5qsiKUJVBtgvXwd+ATiqJgCnj8HaAAAAAElFTkSuQmCC"
+                        />
+                      </svg>
+                    </i>
+                    <a href="" class="">84 Street, City, State 24813</a>
+                  </span>
+                  <span
+                    ><i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="7"
+                        height="13"
+                        viewBox="0 0 7 13"
+                      >
+                        <image
+                          id="icon-mobile"
+                          width="7"
+                          height="13"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAANCAYAAABlyXS1AAAAW0lEQVQYlWNcvHH/JgYGBl8GTLCVBSpxEEOKgcEbJAkCDhhSDAz/mTCEkMDQkoT5cwI+yXwGBoY7DAwM8QwMDHMYGBg0QYIgY0FhCwLSDAwMKQwMDApgHgPDZgBzYQuE3Bs72wAAAABJRU5ErkJggg=="
+                        />
+                      </svg>
+                    </i>
+                    <a href="" class="">+00 (123) 456 78 90</a>
+                  </span>
+                  <span
+                    ><i class="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="11"
+                        height="9"
+                        viewBox="0 0 11 9"
+                      >
+                        <image
+                          id="icon-mail-1"
+                          width="11"
+                          height="9"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJCAYAAADkZNYtAAAAmElEQVQYlYXQQQpBYRAH8J+HYmFj6QT2buAEDiD27qFslAMoNg5iJ3tOIGWhLKQsSJP36vWI/+qbvl/TzJR6o/EZZf/zrKCBJq4/eJhzgioWqH+Qd2qYh0vSjjds0S7AqDe4hwv8wBBTrNN3pJ/WMwzCxcxZlmn3FSY4oYtdBvI4skcHLRzjAvnPIo4EOHzbNHDMfPl7ZZ4vRAke4UzzD24AAAAASUVORK5CYII="
+                        />
+                      </svg>
+                    </i>
+                    <a href="" class="">info@reen.com</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="subsribe">
+                <h4>Free Updates</h4>
+                <p>
+                  Conecus iure posae volor remped modisaut lor volor accabora
+                  incim resto explabo.
+                </p>
+                <div class="subscribe-email">
+                  <input
+                    type="email"
+                    class="email rounded"
+                    placeholder="Enter your email address"
+                  />
+                  <button class="rounded sub-btn">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="copyright">
+                <h4>© 2014 REEN. All rights reserved.</h4>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="footer-link">
+                <a href="">Home</a>
+                <a href="">Portfolio</a>
+                <a href="">Blog</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

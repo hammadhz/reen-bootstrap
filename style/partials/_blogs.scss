@@ -1,0 +1,46 @@
+.blog{
+    background-color: $tenth-color;
+    padding: 160px 0 90px 0;
+    .section-head{
+        text-align: center;
+        margin-bottom: 75px;
+        h2{
+            font-family: $secondary-font;
+            font-size: 44px;
+            color: $secondary-color;
+            font-weight: 600;
+        }
+        p{
+            font-family: $primary-font;
+            font-size: 22px;
+            color: $ninth-color;
+        }
+    }
+    .latest-posts{
+        margin-bottom: 72px;
+        .post-inner-col{
+            background-color: $fourth-color;
+            .content{
+                padding: 15px 0;
+                text-align: center;
+                h4{
+                    font-family: $secondary-font;
+                    font-size: 20px;
+                    color: $secondary-color;
+                    font-weight: 600;
+                }
+                p{
+                    font-family: $primary-font;
+                    font-size: 14px;
+                    color: $ninth-color;
+                }
+            }
+        }
+    }
+    .carousal-row{
+        img{
+            height: 189px;
+            width: 258px;
+        }
+    }
+}

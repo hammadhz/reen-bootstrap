@@ -1,0 +1,43 @@
+.services{
+    padding: 125px 0;
+    background-color: #ffffff;
+        .service-head{
+            margin-bottom: 70px;
+            h2{
+                font-size: 44px;
+                font-family: $secondary-font;
+                font-weight: 900;
+                color: $secondary-color;
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 22px;
+                font-family: $primary-font;
+                color: $ninth-color;
+                max-width: 770px;
+            }
+        }
+       .service-col{
+        display: flex;
+        .service-icon{
+          margin-right: 30px;
+        }
+        .service-text{
+            h4{
+                font-family: $secondary-font;
+                font-weight: 900;
+                font-size: 24px;
+                color: $secondary-color;
+                margin-bottom: 30px;
+                text-align: left;
+            }
+            p{
+                text-align: left;
+                color: $ninth-color;
+                font-family: $primary-font;
+                font-size: 16px;
+                max-width: 264px;
+            }
+        }
+       }
+}

@@ -1,0 +1,22 @@
+.menu{
+    list-style: none;
+    display: block;
+    text-align: left;
+    li{
+        display: inline-block;
+        a{
+            text-transform: uppercase;
+            color: $secondary-color;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 40px;
+        }
+    }
+    li:first-child{
+        margin-left: 0;
+    }
+    li:last-child{
+        float: right;
+    }
+}
